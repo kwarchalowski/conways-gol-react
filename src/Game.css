@@ -5,3 +5,58 @@
   background-image: linear-gradient(#444 1px, transparent 1px),
     linear-gradient(90deg, #333 1px, transparent 1px);
 }
+
+.Cell {
+  background: #ccc;
+  position: absolute;
+}
+
+.controls {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: block;
+  text-align: center;
+}
+
+.button {
+  margin-left: 2px;
+  width: 120px;
+  background-color: #555;
+  border: 1px dashed #777;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.button:hover {
+  background-color: #777;
+}
+
+.button:active {
+  background-color: #aaa
+}
+
+input {
+  width: 50px;
+  margin: 0px 5px 0px 5px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a3a3a3;
+  box-shadow: 0 0 5px #858686;
+}
