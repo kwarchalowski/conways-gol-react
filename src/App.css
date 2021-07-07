@@ -1,13 +1,19 @@
 .title {
   display: flexbox;
   text-align: center;
-  width: 90%;
+  width: 1000px;
   margin: auto;
   margin-top: 10px;
-  border: 3px double #777;
+  border: 1px solid #777;
 }
 
-.footer {
+.title:hover {
+  background-color: #555;
+  color: #222;
+  border: 1px solid #333;
+}
+
+.author {
   text-align: right;
   display: block;
   color: #ddd;
@@ -15,6 +21,12 @@
   width: fit-content;
   border: 1px solid #555;
   padding: 2px 5px 2px 5px;
+}
+
+.author:hover {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #777;
 }
 
 h1 {
