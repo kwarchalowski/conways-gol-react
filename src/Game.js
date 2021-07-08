@@ -1,8 +1,10 @@
 import React from 'react'; import './Game.css';
 
-const CELL_SIZE = 15;
-const WIDTH = 900;
-const HEIGHT = 700;
+const CELL_SIZE = 20;
+const WIDTH = 1080;
+const HEIGHT = 680;
+let isMoore = true;
+let iterationNumber = 0;
 
 class Cell extends React.Component {
 
@@ -51,8 +53,6 @@ class Game extends React.Component {
 
         return cells;
     }
-
-
 
 
     state = {
@@ -105,6 +105,7 @@ class Game extends React.Component {
 
     runIteration() {
         let newBoard = this.makeEmptyBoard();
+        iterationNumber++;
 
         for (let y = 0; y < this.rows; y++) {
             for (let x = 0; x < this.cols; x++) {
@@ -139,7 +140,12 @@ class Game extends React.Component {
      */
     calculateNeighbors(board, x, y) {
         let neighbors = 0;
-        const dirs = [[-1, -1], [-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1]];
+        let dirs = [[]];
+        if (isMoore) {
+            dirs = [[-1, -1], [-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1], [0, -1]];
+        } else if (!isMoore) {
+            dirs = [[-1, 0], [0, -1], [1, 0], [0, 1]];
+        }
         for (let i = 0; i < dirs.length; i++) {
             const dir = dirs[i];
             let y1 = y + dir[0];
@@ -154,12 +160,18 @@ class Game extends React.Component {
     }
 
     handleIntervalChange = (event) => {
+        iterationNumber++;
         this.setState({ interval: event.target.value });
     }
 
     handleClear = () => {
+        iterationNumber = 0;
         this.board = this.makeEmptyBoard();
         this.setState({ cells: this.makeCells() });
+    }
+
+    handleChange = () => {
+        isMoore = !isMoore;
     }
 
     handleRandom = () => {
@@ -202,13 +214,19 @@ class Game extends React.Component {
                 </div>
 
                 <div className="controls">
-                    Step interval: <input value={this.state.interval} onChange={this.handleIntervalChange} /> ms <p/>
+                    Step interval: <input value={this.state.interval} onChange={this.handleIntervalChange} /> ms, iterations: {iterationNumber}  <p />
                     {isRunning ?
                         <button className="button" onClick={this.stopGame}>Stop</button> :
                         <button className="button" onClick={this.runGame}>Run</button>
                     }
+
+                    {isMoore ?
+                        <button className="button" onClick={this.handleChange}>Moore</button> :
+                        <button className="button" onClick={this.handleChange}>Neumann</button>
+                    }
+
                     <button className="button" onClick={this.handleRandom}>Random</button>
-                    <button className="button" onClick={this.handleClear}>Clear</button>
+                    <button className="button btnClear" onClick={this.handleClear}>Clear</button>                    
                 </div>
             </div>
         );

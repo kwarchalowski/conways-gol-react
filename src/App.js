@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <div class='title'>
-        <h1>Conway's basic Game of Life in React</h1>
+        <h1>Conway's Game of Life in React</h1>
       </div>
 
 

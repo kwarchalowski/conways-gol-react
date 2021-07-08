@@ -2,12 +2,13 @@
   position: relative;
   background-color: #111;
   margin: 10px auto;
+  border: 1px solid #888;
   background-image: linear-gradient(#444 1px, transparent 1px),
     linear-gradient(90deg, #333 1px, transparent 1px);
 }
 
 .Cell {
-  background: #ccc;
+  background: #ababab;
   position: absolute;
 }
 
@@ -22,7 +23,7 @@
 
 .button {
   margin-left: 2px;
-  width: 120px;
+  width: 130px;
   background-color: #555;
   border: 1px dashed #777;
   color: white;
@@ -30,12 +31,12 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   text-transform: uppercase;
   overflow: hidden;
-  cursor: pointer;
+  cursor: grab;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -44,7 +45,19 @@
 }
 
 .button:active {
-  background-color: #aaa
+  background-color: #aaa;
+}
+
+.btnClear {
+  background-color: #991010;
+}
+
+.btnClear:hover {
+  background-color: #ff1b1b;
+}
+
+.btnClear:active {
+  background-color: #aa1b1b;
 }
 
 input {
@@ -57,6 +70,6 @@ input {
 
 input:focus {
   outline: none;
-  border-color: #a3a3a3;
-  box-shadow: 0 0 5px #858686;
+  border-color: #a8ff1b;
+  box-shadow: 0 0 2px #51be07;
 }
