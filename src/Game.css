@@ -73,3 +73,9 @@ input:focus {
   border-color: #a8ff1b;
   box-shadow: 0 0 2px #51be07;
 }
+
+input#iterations {
+  color: rgb(149, 243, 149);
+  font-size: larger;
+  border: none;
+}

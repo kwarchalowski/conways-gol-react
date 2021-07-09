@@ -171,13 +171,14 @@ class Game extends React.Component {
     }
 
     handleChange = () => {
+        this.stopGame();
         isMoore = !isMoore;
     }
 
     handleRandom = () => {
         for (let y = 0; y < this.rows; y++) {
             for (let x = 0; x < this.cols; x++) {
-                this.board[y][x] = (Math.random() >= 0.5);
+                this.board[y][x] = (Math.random() >= 0.6);
             }
         }
 
@@ -214,7 +215,7 @@ class Game extends React.Component {
                 </div>
 
                 <div className="controls">
-                    Step interval: <input value={this.state.interval} onChange={this.handleIntervalChange} /> ms, iterations: {iterationNumber}  <p />
+                    Step interval: <input value={this.state.interval} onChange={this.handleIntervalChange} /> ms, iterations: <input id="iterations" value={iterationNumber} type="text" disabled />  <p />
                     {isRunning ?
                         <button className="button" onClick={this.stopGame}>Stop</button> :
                         <button className="button" onClick={this.runGame}>Run</button>
@@ -226,7 +227,7 @@ class Game extends React.Component {
                     }
 
                     <button className="button" onClick={this.handleRandom}>Random</button>
-                    <button className="button btnClear" onClick={this.handleClear}>Clear</button>                    
+                    <button className="button btnClear" onClick={this.handleClear}>Clear</button>
                 </div>
             </div>
         );
