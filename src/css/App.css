@@ -1,16 +1,16 @@
 .title {
   display: flexbox;
   text-align: center;
-  width: 1000px;
+  width: 1080px;
   margin: auto;
   margin-top: 10px;
   border: 1px solid #777;
 }
 
 .title:hover {
-  background-color: #555;
-  color: #222;
-  border: 1px solid #333;
+  background-color: #333;
+  color: #777;
+  border: 1px solid #222;
 }
 
 .author {
@@ -18,6 +18,8 @@
   display: block;
   color: #ddd;
   margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #555;
   padding: 2px 5px 2px 5px;
@@ -32,3 +34,4 @@
 h1 {
   font-size: 2em;
 }
+/*# sourceMappingURL=App.css.map */

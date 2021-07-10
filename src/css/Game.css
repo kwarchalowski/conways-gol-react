@@ -1,21 +1,9 @@
-.Board {
-  position: relative;
-  background-color: #111;
-  margin: 10px auto;
-  border: 1px solid #888;
-  background-image: linear-gradient(#444 1px, transparent 1px),
-    linear-gradient(90deg, #333 1px, transparent 1px);
-}
-
-.Cell {
-  background: #ababab;
-  position: absolute;
-}
-
 .controls {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   display: block;
   text-align: center;
@@ -32,10 +20,12 @@
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   text-transform: uppercase;
   overflow: hidden;
+  cursor: -webkit-grab;
   cursor: grab;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -48,16 +38,34 @@
   background-color: #aaa;
 }
 
-.btnClear {
+.button#btnClear {
   background-color: #991010;
 }
 
-.btnClear:hover {
+.button#btnClear:hover {
   background-color: #ff1b1b;
 }
 
-.btnClear:active {
+.button#btnClear:active {
   background-color: #aa1b1b;
+}
+
+.button#btnRun {
+  background-color: #7ac99b;
+  color: black;
+}
+
+.button#btnRun:hover {
+  background-color: #a8f5c8;
+}
+
+.button#btnStop {
+  background-color: #c99e7a;
+  color: black;
+}
+
+.button#btnStop:hover {
+  background-color: #f7c8a2;
 }
 
 input {
@@ -71,11 +79,19 @@ input {
 input:focus {
   outline: none;
   border-color: #a8ff1b;
-  box-shadow: 0 0 2px #51be07;
+  -webkit-box-shadow: 1px 2px 6px #51be07;
+          box-shadow: 1px 2px 6px #51be07;
 }
 
 input#iterations {
-  color: rgb(149, 243, 149);
+  color: #95f395;
   font-size: larger;
   border: none;
 }
+
+input#interval {
+  color: #95ddf3;
+  font-size: large;
+  border: none;
+}
+/*# sourceMappingURL=Game.css.map */

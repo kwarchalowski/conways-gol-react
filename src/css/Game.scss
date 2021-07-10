@@ -1,0 +1,95 @@
+@import "helpers/variables";
+
+
+.controls {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: block;
+  text-align: center;
+}
+
+.button {
+  margin-left: 2px;
+  width: 130px;
+  background-color: $gray02;
+  border: 1px dashed $gray01;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: grab;
+  font-family: 'Titillium Web', sans-serif;
+
+  &:hover {
+    background-color: $gray01;
+  }
+
+  &:active {
+    background-color: $gray00;
+  }
+
+  &#btnClear {
+    background-color: $clearBtnColor;
+
+    &:hover {
+      background-color: $clearBtnHoverColor;
+    }
+
+    &:active {
+      background-color: $clearBtnActiveColor;
+    }
+  }
+
+  &#btnRun {
+    background-color: $runBtnColor;
+    color: black;
+
+    &:hover {
+        background-color: $runBtnHoverColor;
+    }
+  }
+
+  &#btnStop {
+    background-color: $stopBtnColor;
+    color: black;
+
+    &:hover {
+        background-color: $stopBtnHoverColor;
+    }
+  }
+}
+
+input {
+  width: 50px;
+  margin: 0px 5px 0px 5px;
+  text-align: center;
+  background-color: $gray03;
+  color: white;
+
+  &:focus {
+    outline: none;
+    border-color: #a8ff1b;
+    box-shadow: 1px 2px 6px #51be07;
+  }
+
+  &#iterations {
+    color: $iterationsColor;
+    font-size: larger;
+    border: none;
+  }
+
+  &#interval {
+    color: $intervalColor;
+    font-size: large;
+    border: none;
+  }
+
+}
