@@ -1,6 +1,11 @@
 # John Conway's Game of Life in React mini-project
 
 
+## Latest version:
+
+See the latest version [on my GitHub Pages site](https://kwarchalowski.github.io/conways-gol-react/)! :sweat_smile:
+
+
 ## :bulb: Idea and purpose for this project :bulb:
 
 ![picture alt](img/220px-React-icon.png "React.js logo")
