@@ -191,7 +191,6 @@ class Game extends React.Component {
      * @param {*} event
      */
     actionChangeInterval = (event) => {
-        iterationNumber++;
         this.setState({ interval: event.target.value });
     }
 
