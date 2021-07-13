@@ -41,3 +41,17 @@ I've also tried to make clean code using JSDoc comments.
 2. Any dead cell with three live neighbours becomes a live cell.
 3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
+## :rocket: Basic concept of my work :rocket:
+
+I wanted to get a little more knowledge of JavaScript itself, React.js library and merge it all into something nice. Not so far ago I've learned to use [Sass](https://sass-lang.com/) (SCSS) preprocessor scripting language to compile *.scss into nice and clean *.css files readable by all browsers.
+
+With all this knowledge I've started my work in Visual Studio Code using some usefull extensions to make my code nice and clean. I've used [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) to compile Sass into CSS files on fly. With help of [Create React App](https://github.com/facebook/create-react-app) I was able to run local React environment to see all the changes I made in code. I've also divided my tasks to be able to complete them one by one without any bigger problems and going back. I've been using [Git](https://git-scm.com/) version control system to commit and push changes on my [GitHub](https://github.com/) account. It all led to nice flow and good consistency of work. :thumbsup:
+
+For deploy of my app I used [GitHub Pages](https://pages.github.com/) which is superb tool for such small programmers as me. All I needed to do was make some small changes in the *package.json* config files, make another GitHub branch for the safety etc. and rebuild entire project with some specific parameters in the end. That's all, after few clicks, the page was up and working like a charm. Thanks, GitHub :)
+
+### :anger: Problems and issues :anger:
+
+To be honest there were none big issues or problems during entire process of creating and deploying this app. I've used some help of another GoL's projects and my knowledge from IT studies so it was rather easy task. It all \**clicked*\*, VSCode is really easy to customize and there's no problem with linking it with Git version control systems, deploying apps like *Create React App* etc.
+
+The biggest issue I had was connected with resolution and mouse click events. When the site was one-paged it all worked like a charm but when you've shrinked the browser's window or used another resolution where scrollbar was active - you could see that there's something wrong with calculating mouse on-screen position. I'm aware about this issue and it's undergoing 'maintenance' right now (as for 12.07.2021) :stuck_out_tongue:
+
