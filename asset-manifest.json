@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/conways-gol-react/static/css/main.a250b21d.chunk.css",
-    "main.js": "/conways-gol-react/static/js/main.4e4c489a.chunk.js",
-    "main.js.map": "/conways-gol-react/static/js/main.4e4c489a.chunk.js.map",
+    "main.js": "/conways-gol-react/static/js/main.1ccc236d.chunk.js",
+    "main.js.map": "/conways-gol-react/static/js/main.1ccc236d.chunk.js.map",
     "runtime-main.js": "/conways-gol-react/static/js/runtime-main.4b896d1f.js",
     "runtime-main.js.map": "/conways-gol-react/static/js/runtime-main.4b896d1f.js.map",
     "static/js/2.483fe5e2.chunk.js": "/conways-gol-react/static/js/2.483fe5e2.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.4b896d1f.js",
     "static/js/2.483fe5e2.chunk.js",
     "static/css/main.a250b21d.chunk.css",
-    "static/js/main.4e4c489a.chunk.js"
+    "static/js/main.1ccc236d.chunk.js"
   ]
 }
