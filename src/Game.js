@@ -40,8 +40,14 @@ class Game extends React.Component {
         const rect = this.boardRef.getBoundingClientRect();
         const doc = document.documentElement;
         return {
+
+            /*
+            ! broken, it keeps absolute size, we need NOT to add window.pageXOffset or window.scrollX etc.~
             x: (rect.left + window.pageXOffset) - doc.clientLeft,
-            y: (rect.top + window.pageYOffset) - doc.clientTop,
+            y: (rect.top + window.pageYOffset) - doc.clientTop, */
+            
+            x: (rect.left) - doc.clientLeft,
+            y: (rect.top) - doc.clientTop,
         };
     }
 
