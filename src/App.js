@@ -15,7 +15,7 @@ function App() {
 
 
       <div class='author'>
-        Karol 'z0miren' Warchałowski
+        Karol Warchałowski
       </div>
     </div>
   );
