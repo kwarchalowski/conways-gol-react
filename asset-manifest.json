@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/conways-gol-react/static/css/main.a250b21d.chunk.css",
-    "main.js": "/conways-gol-react/static/js/main.1ccc236d.chunk.js",
-    "main.js.map": "/conways-gol-react/static/js/main.1ccc236d.chunk.js.map",
+    "main.css": "/conways-gol-react/static/css/main.648b1a43.chunk.css",
+    "main.js": "/conways-gol-react/static/js/main.7ecba3a3.chunk.js",
+    "main.js.map": "/conways-gol-react/static/js/main.7ecba3a3.chunk.js.map",
     "runtime-main.js": "/conways-gol-react/static/js/runtime-main.4b896d1f.js",
     "runtime-main.js.map": "/conways-gol-react/static/js/runtime-main.4b896d1f.js.map",
     "static/js/2.483fe5e2.chunk.js": "/conways-gol-react/static/js/2.483fe5e2.chunk.js",
     "static/js/2.483fe5e2.chunk.js.map": "/conways-gol-react/static/js/2.483fe5e2.chunk.js.map",
     "index.html": "/conways-gol-react/index.html",
-    "static/css/main.a250b21d.chunk.css.map": "/conways-gol-react/static/css/main.a250b21d.chunk.css.map",
+    "static/css/main.648b1a43.chunk.css.map": "/conways-gol-react/static/css/main.648b1a43.chunk.css.map",
     "static/js/2.483fe5e2.chunk.js.LICENSE.txt": "/conways-gol-react/static/js/2.483fe5e2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4b896d1f.js",
     "static/js/2.483fe5e2.chunk.js",
-    "static/css/main.a250b21d.chunk.css",
-    "static/js/main.1ccc236d.chunk.js"
+    "static/css/main.648b1a43.chunk.css",
+    "static/js/main.7ecba3a3.chunk.js"
   ]
 }
