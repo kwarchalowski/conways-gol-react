@@ -53,5 +53,11 @@ For deploy of my app I used [GitHub Pages](https://pages.github.com/) which is s
 
 To be honest there were none big issues or problems during entire process of creating and deploying this app. I've used some help of another GoL's projects and my knowledge from IT studies so it was rather easy task. It all \**clicked*\*, VSCode is really easy to customize and there's no problem with linking it with Git version control systems, deploying apps like *Create React App* etc.
 
-The biggest issue I had was connected with resolution and mouse click events. When the site was one-paged it all worked like a charm but when you've shrinked the browser's window or used another resolution where scrollbar was active - you could see that there's something wrong with calculating mouse on-screen position. I'm aware about this issue and it's undergoing 'maintenance' right now (as for 12.07.2021) :stuck_out_tongue:
+The biggest issue I had was connected with resolution and mouse click events. When the site was one-paged it all worked like a charm but when you've shrinked the browser's window or used another resolution where scrollbar was active - you could see that there's something wrong with calculating mouse on-screen position.
 
+- [ ]  ~~I'm aware about this issue and it's undergoing 'maintenance' right now (as for 12.07.2021)~~ :stuck_out_tongue:
+
+- [x] all issues I was aware of are fixed as for 13.07.2021 ^_^ project is finally 'finished' and I can call it version 1.0 :stuck_out_tongue:
+
+
+-------------------------------------------------------------------------------------------------

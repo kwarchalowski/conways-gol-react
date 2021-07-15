@@ -3,7 +3,7 @@ import React from 'react';
 /**
 * ! it has to match CELL_SIZE param in the Game.js
 */
-const CELL_SIZE = 20;
+const CELL_SIZE = 18;
 
 class Cell extends React.Component {
 

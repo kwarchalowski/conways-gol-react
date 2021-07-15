@@ -2,12 +2,13 @@
   position: relative;
   background-color: #111;
   margin: 10px auto;
-  border: 1px solid #888;
+  border: 1px solid #666;
+  border-radius: 6px;
   background-image: linear-gradient(#444 1px, transparent 1px),
     linear-gradient(90deg, #333 1px, transparent 1px);
 }
 
 .Cell {
-  background: #ababab;
+  background: #c5cec2;
   position: absolute;
 }

@@ -11,7 +11,7 @@
 
 .button {
   margin-left: 2px;
-  width: 130px;
+  width: 120px;
   background-color: $gray02;
   border: 1px dashed $gray01;
   color: white;
@@ -75,8 +75,8 @@ input {
 
   &:focus {
     outline: none;
-    border-color: #a8ff1b;
-    box-shadow: 1px 2px 6px #51be07;
+    border-color: #f8faf5;
+    box-shadow: 1px 1px 12px #78abb4;
   }
 
   &#iterations {

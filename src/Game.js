@@ -3,9 +3,9 @@ import Cell from './Cell';
 import './css/Game.css';
 import './css/Cell.css';
 
-const CELL_SIZE = 20;
-const WIDTH = 1080;
-const HEIGHT = 680;
+const CELL_SIZE = 18;
+const WIDTH = 990;
+const HEIGHT = 630;
 let isMoore = true;
 let iterationNumber = 0;
 
@@ -46,6 +46,9 @@ class Game extends React.Component {
             x: (rect.left + window.pageXOffset) - doc.clientLeft,
             y: (rect.top + window.pageYOffset) - doc.clientTop, */
             
+            /*
+            * this one is ok for us :)
+            */
             x: (rect.left) - doc.clientLeft,
             y: (rect.top) - doc.clientTop,
         };
@@ -127,6 +130,7 @@ class Game extends React.Component {
     runGame = () => {
         this.setState({ isRunning: true });
         this.nextIteration();
+        
     }
 
     /**
@@ -254,7 +258,7 @@ class Game extends React.Component {
                     ))}
                 </div>
 
-                <div className="controls">
+                <div className="controls noselect">
                     Step interval: <input id="interval" value={this.state.interval} onChange={this.actionChangeInterval} /> ms, iterations: <input id="iterations" value={iterationNumber} type="text" disabled />  <p />
                     {isRunning ?
                         <button className="button" id="btnStop" onClick={this.stopGame}>Stop</button> :
